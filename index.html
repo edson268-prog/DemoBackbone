@@ -1,21 +1,33 @@
-<html>
-    <head>
-        <title></title>
-        <script src="./js/jquery-3.7.1.min.js"></script>
-        <script src="./js/underscore-min.js"></script>
-        <script src="./js/backbone-min.js"></script>
-        <script src="./js/collectionsExample.js"></script>
-        <script type="text/template" id="renderTemplate">
-            <span class="hello">Hello</span>
-            <span>Mommy and Daddy</span>
-            <div>I love cake with chesse and macaroni</div>
-        </script>
-    </head>
-    <body>
-        Hello World
+<!DOCTYPE html>
+<html lang="en">
 
-        <div id="unique"></div>
-        <div id="div2"></div>
-        <div id="div3"></div>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backbone.js App</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div id="app">
+        <h1>Client Management</h1>
+        <div id="form-container">
+            <input type="text" id="client-name" placeholder="Enter client name">
+            <button id="add-client">Add Client</button>
+        </div>
+        <ul id="client-list"></ul>
+    </div>
+
+    <!-- Librerías y scripts -->
+    <script src="js/libs/jquery-3.7.1.min.js"></script>
+    <script src="js/libs/underscore-min.js"></script>
+    <script src="js/libs/backbone-min.js"></script>
+
+    <script src="js/models/client.js"></script>
+    <script src="js/collections/clientCollection.js"></script>
+    <script src="js/views/clientView.js"></script>
+    <script src="js/views/appView.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
 </html>
